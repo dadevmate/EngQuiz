@@ -1,0 +1,289 @@
+<html>
+
+<body style="background-color: #f2a311;">
+
+  <h1 style="text-align: center; font-family: Arial; color: white; margin-top: 100px;">Normal: Quiz 1</h1>
+
+  <h2 style="color: black; font-family: Courier new; margin-top: 100px;">5 questions in total:</h2>
+
+
+  <div style="background: white; width: 500px; height: 500px; margin-left: 460px; border: solid 5px black;">
+
+    <input style="width: 400px; margin-left: 50px; height: 40px; margin-top: 20px; font-size: 15px; font-family: Trebuchet MS;" type="text" id="qnsBox" value="Johnny showed his ________ to sing.">
+
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option1" onclick ="firstOption()">abilities</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option2" onclick = "secondOption()">ability</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option3" onclick="thirdOption()">talent</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option4" onclick = "fourthOption()">talents</button>
+
+
+</div>
+
+<script>
+
+var qnsBox =  document.getElementById("qnsBox");
+var button1 = document.getElementById("option1");
+var button2 = document.getElementById("option2");
+var button3 = document.getElementById("option3");
+var button4 = document.getElementById("option4");
+
+var score =  100;
+
+function firstOption(){
+
+if (qnsBox.value == "Johnny showed his ________ to sing."){
+
+alert("Wrong! The answer is option 2, 'ability'.");
+
+qnsBox.value = "The instructor ________ told to leave the room."
+
+button1.innerHTML = "will";
+button2.innerHTML = "is";
+button3.innerHTML = "was";
+button4.innerHTML = "be";
+
+score = score - 20;
+
+} else if (qnsBox.value == "The instructor ________ told to leave the room."){
+
+alert("Wrong. The answer is option 3, 'was'.")
+
+qnsBox.value = "Chloe enunciated ________ word cautiously."
+
+button1.innerHTML = "all";
+button2.innerHTML = "every";
+button3.innerHTML = "entire";
+button4.innerHTML = "no";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Chloe enunciated ________ word cautiously."){
+
+alert("Wrong! The answer is option 2, 'experimented'.");
+
+qnsBox.value = "Pepper was ________ to try new things."
+
+button1.innerHTML = "willing";
+button2.innerHTML = "wanted";
+button3.innerHTML = "will";
+button4.innerHTML = "need";
+
+score =  score - 20;
+} else if (qnsBox.value == "Pepper was ________ to try new things."){
+
+  alert("Correct. Your intellectual capabilities astonish me!");
+
+
+  qnsBox.value = "Max is ________ about the world around him."
+
+  button1.innerHTML = "curiously";
+  button2.innerHTML = "intuitive";
+  button3.innerHTML = "interest";
+  button4.innerHTML = "inquisitive";
+
+  score = score;
+
+} else if (qnsBox.value == "Max is ________ about the world around him."){
+
+score = score - 20;
+alert("Wrong! The answer is option 4, 'inquisitive'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+
+function secondOption(){
+
+if (qnsBox.value == "Johnny showed his ________ to sing."){
+
+alert("Correct. You're really smart!");
+
+qnsBox.value = "The instructor ________ told to leave the room."
+
+button1.innerHTML = "will";
+button2.innerHTML = "is";
+button3.innerHTML = "was";
+button4.innerHTML = "be";
+
+score = score;
+
+} else if (qnsBox.value == "The instructor ________ told to leave the room."){
+
+alert("Wrong. The answer is option 3, 'was'.")
+
+qnsBox.value = "Chloe enunciated ________ word cautiously."
+
+button1.innerHTML = "all";
+button2.innerHTML = "every";
+button3.innerHTML = "entire";
+button4.innerHTML = "no";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Chloe enunciated ________ word cautiously."){
+
+alert("Correct! I'm starting to admire your intellectual capabilities.");
+
+qnsBox.value = "Pepper was ________ to try new things."
+
+button1.innerHTML = "willing";
+button2.innerHTML = "wanted";
+button3.innerHTML = "will";
+button4.innerHTML = "need";
+
+score =  score;
+} else if (qnsBox.value == "Pepper was ________ to try new things."){
+
+  alert("Wrong. The answer is option 1, 'willing'.");
+
+
+  qnsBox.value = "Max is ________ about the world around him."
+
+  button1.innerHTML = "curiously";
+  button2.innerHTML = "intuitive";
+  button3.innerHTML = "interest";
+  button4.innerHTML = "inquisitive";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Max is ________ about the world around him."){
+
+score = score - 20;
+alert("Wrong! The answer is option 4, 'inquisitive'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function thirdOption(){
+
+if (qnsBox.value == "Johnny showed his ________ to sing."){
+
+alert("Wrong! The answer is option 2, 'ability'.");
+
+qnsBox.value = "The instructor ________ told to leave the room."
+
+button1.innerHTML = "will";
+button2.innerHTML = "is";
+button3.innerHTML = "was";
+button4.innerHTML = "be";
+
+score = score - 20;
+
+} else if (qnsBox.value == "The instructor ________ told to leave the room."){
+
+alert("Correct! Mate, do you mind teaching me English?")
+
+qnsBox.value = "Chloe enunciated ________ word cautiously."
+
+button1.innerHTML = "all";
+button2.innerHTML = "every";
+button3.innerHTML = "entire";
+button4.innerHTML = "no";
+
+score = score;
+
+} else if (qnsBox.value == "Chloe enunciated ________ word cautiously."){
+
+alert("Wrong! The answer is option 2, 'experimented'.");
+
+qnsBox.value = "Pepper was ________ to try new things."
+
+button1.innerHTML = "willing";
+button2.innerHTML = "wanted";
+button3.innerHTML = "will";
+button4.innerHTML = "need";
+
+score =  score - 20;
+} else if (qnsBox.value == "Pepper was ________ to try new things."){
+
+  alert("Wrong! The answer is option 1, 'willing'.");
+
+
+  qnsBox.value = "Max is ________ about the world around him."
+
+  button1.innerHTML = "curiously";
+  button2.innerHTML = "intuitive";
+  button3.innerHTML = "interest";
+  button4.innerHTML = "inquisitive";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Max is ________ about the world around him."){
+
+score = score - 20;
+alert("Wrong! The answer is option 4, 'inquisitive'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function fourthOption(){
+
+if (qnsBox.value == "Johnny showed his ________ to sing."){
+
+alert("Wrong! The answer is option 2, 'ability'.");
+
+qnsBox.value = "The instructor ________ told to leave the room."
+
+button1.innerHTML = "will";
+button2.innerHTML = "is";
+button3.innerHTML = "was";
+button4.innerHTML = "be";
+
+score = score - 20;
+
+} else if (qnsBox.value == "The instructor ________ told to leave the room."){
+
+alert("Wrong. The answer is option 3, 'was'.")
+
+qnsBox.value = "Chloe enunciated ________ word cautiously."
+
+button1.innerHTML = "all";
+button2.innerHTML = "every";
+button3.innerHTML = "entire";
+button4.innerHTML = "no";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Chloe enunciated ________ word cautiously."){
+
+alert("Wrong! The answer is option 2, 'every'.");
+
+qnsBox.value = "Pepper was ________ to try new things."
+
+button1.innerHTML = "willing";
+button2.innerHTML = "wanted";
+button3.innerHTML = "will";
+button4.innerHTML = "need";
+
+score =  score - 20;
+} else if (qnsBox.value == "Pepper was ________ to try new things."){
+
+  alert("Wrong! The answer is option 1, 'willing'.");
+
+
+  qnsBox.value = "Max is ________ about the world around him."
+
+  button1.innerHTML = "curiously";
+  button2.innerHTML = "intuitive";
+  button3.innerHTML = "interest";
+  button4.innerHTML = "inquisitive";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Max is ________ about the world around him."){
+
+score = score;
+alert("Correct! What an impressive feat! Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+</script>
+</body>
+
+
+</html>

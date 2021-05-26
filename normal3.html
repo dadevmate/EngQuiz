@@ -1,0 +1,288 @@
+<html>
+
+<body style="background-color: #f2a311;">
+
+  <h1 style="text-align: center; font-family: Arial; color: white; margin-top: 100px;">Normal: Quiz 3</h1>
+
+  <h2 style="color: black; font-family: Courier new; margin-top: 100px;">5 questions in total:</h2>
+
+
+  <div style="background: white; width: 500px; height: 500px; margin-left: 460px; border: solid 5px black;">
+
+    <input style="width: 400px; margin-left: 50px; height: 40px; margin-top: 20px; font-size: 15px; font-family: Trebuchet MS;" type="text" id="qnsBox" value="The King ________ annialated, yesterday.">
+
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option1" onclick ="firstOption()">is</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option2" onclick = "secondOption()">will</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option3" onclick="thirdOption()">was</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option4" onclick = "fourthOption()">on</button>
+
+
+</div>
+
+<script>
+
+var qnsBox =  document.getElementById("qnsBox");
+var button1 = document.getElementById("option1");
+var button2 = document.getElementById("option2");
+var button3 = document.getElementById("option3");
+var button4 = document.getElementById("option4");
+
+var score =  100;
+
+function firstOption(){
+
+if (qnsBox.value == "The King ________ annialated, yesterday."){
+
+alert("Wrong! The answer is option 3, 'was'.");
+
+qnsBox.value = "Which word has a similar meaning to 'recalcitrant'?"
+
+button1.innerHTML = "rowdy";
+button2.innerHTML = "boisterous";
+button3.innerHTML = "insubordinate";
+button4.innerHTML = "defiant";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Which word has a similar meaning to 'recalcitrant'?"){
+
+alert("Wrong! The answer is option 4, 'defiant'.")
+
+qnsBox.value = "Lauren was ________ better treatment."
+
+button1.innerHTML = "expected";
+button2.innerHTML = "expecting";
+button3.innerHTML = "demanded";
+button4.innerHTML = "demand";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Lauren was ________ better treatment."){
+
+alert("Wrong! The answer is option 2, 'expecting'.");
+
+qnsBox.value = "Frustrated, she ________ out of the room."
+
+button1.innerHTML = "ran";
+button2.innerHTML = "jogged";
+button3.innerHTML = "stormed";
+button4.innerHTML = "walked";
+
+score =  score - 20;
+} else if (qnsBox.value == "Frustrated, she ________ out of the room."){
+
+  alert("Wrong! The answer is option 3, 'stormed'.");
+
+
+  qnsBox.value = "John ________ too arrogant to apologize to her.";
+
+  button1.innerHTML = "was";
+  button2.innerHTML = "is";
+  button3.innerHTML = "will";
+  button4.innerHTML = "at";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "John ________ too arrogant to apologize to her."){
+
+score = score;
+alert("Correct! I never doubted you! Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+
+function secondOption(){
+
+if (qnsBox.value == "The King ________ annialated, yesterday."){
+
+alert("Wrong! The answer is option 3, 'was'.");
+
+qnsBox.value = "Which word has a similar meaning to 'recalcitrant'?"
+
+button1.innerHTML = "rowdy";
+button2.innerHTML = "boisterous";
+button3.innerHTML = "insubordinate";
+button4.innerHTML = "defiant";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Which word has a similar meaning to 'recalcitrant'?"){
+
+alert("Wrong! The answer is option 4, 'defiant'.")
+
+qnsBox.value = "Lauren was ________ better treatment."
+
+button1.innerHTML = "expected";
+button2.innerHTML = "expecting";
+button3.innerHTML = "demanded";
+button4.innerHTML = "demand";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Lauren was ________ better treatment."){
+
+alert("Correct! A job well done.");
+
+qnsBox.value = "Frustrated, she ________ out of the room."
+
+button1.innerHTML = "ran";
+button2.innerHTML = "jogged";
+button3.innerHTML = "stormed";
+button4.innerHTML = "walked";
+
+score =  score;
+} else if (qnsBox.value == "Frustrated, she ________ out of the room."){
+
+  alert("Wrong! The answer is option 3, 'stormed'.");
+
+
+  qnsBox.value = "John ________ too arrogant to apologize to her."
+
+  button1.innerHTML = "was";
+  button2.innerHTML = "is";
+  button3.innerHTML = "will";
+  button4.innerHTML = "at";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "John ________ too arrogant to apologize to her."){
+
+score = score - 20;
+alert("Wrong! The answer is option 1, 'was'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function thirdOption(){
+
+if (qnsBox.value == "The King ________ annialated, yesterday."){
+
+alert("Correct! Great job!");
+
+qnsBox.value = "Which word has a similar meaning to 'recalcitrant'?"
+
+button1.innerHTML = "rowdy";
+button2.innerHTML = "boisterous";
+button3.innerHTML = "insubordinate";
+button4.innerHTML = "defiant";
+
+score = score;
+
+} else if (qnsBox.value == "Which word has a similar meaning to 'recalcitrant'?"){
+
+alert("Wrong! The answer is option 4, 'defiant'.")
+
+qnsBox.value = "Lauren was ________ better treatment."
+
+button1.innerHTML = "expected";
+button2.innerHTML = "expecting";
+button3.innerHTML = "demanded";
+button4.innerHTML = "demand";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Lauren was ________ better treatment."){
+
+alert("Wrong! The answer is option 2, 'expecting'.");
+
+qnsBox.value = "Frustrated, she ________ out of the room."
+
+button1.innerHTML = "ran";
+button2.innerHTML = "jogged";
+button3.innerHTML = "stormed";
+button4.innerHTML = "walked";
+
+score =  score - 20;
+} else if (qnsBox.value == "Frustrated, she ________ out of the room."){
+
+  alert("Correct! Did you know that you are very smart?");
+
+
+  qnsBox.value = "John ________ too arrogant too apologize to her."
+
+  button1.innerHTML = "was";
+  button2.innerHTML = "is";
+  button3.innerHTML = "will";
+  button4.innerHTML = "at";
+
+  score = score;
+
+} else if (qnsBox.value == "John ________ too arrogant to apologize to her."){
+
+score = score - 20;
+alert("Wrong! The answer is option 1, 'was'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function fourthOption(){
+
+if (qnsBox.value == "The King ________ annialated, yesterday."){
+
+alert("Wrong! The answer is option 3, 'was'.");
+
+qnsBox.value = "Which word has a similar meaning to 'recalcitrant'?"
+
+button1.innerHTML = "rowdy";
+button2.innerHTML = "boisterous";
+button3.innerHTML = "insubordinate";
+button4.innerHTML = "defiant";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Which word has a similar meaning to 'recalcitrant'?"){
+
+alert("Correct! Fun fact: This quiz was created by Nethan Nerella.")
+
+qnsBox.value = "Lauren was ________ better treatment."
+
+button1.innerHTML = "expected";
+button2.innerHTML = "expecting";
+button3.innerHTML = "demanded";
+button4.innerHTML = "demand";
+
+score = score;
+
+} else if (qnsBox.value == "Lauren was ________ better treatment."){
+
+alert("Wrong! The answer is option 2, 'expecting'.");
+
+qnsBox.value = "Frustrated, she ________ out of the room."
+
+button1.innerHTML = "ran";
+button2.innerHTML = "jogged";
+button3.innerHTML = "stormed";
+button4.innerHTML = "walked";
+
+score =  score - 20;
+} else if (qnsBox.value == "Frustrated, she ________ out of the room."){
+
+  alert("Wrong! The answer is option 3, 'stormed'.");
+
+
+  qnsBox.value = "John ________ too arrogant to apologize to her."
+
+  button1.innerHTML = "was";
+  button2.innerHTML = "is";
+  button3.innerHTML = "will";
+  button4.innerHTML = "at";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "John ________ too arrogant to apologize to her."){
+
+score = score - 20;
+alert("Wrong! The answer is option 1, 'was'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+</script>
+</body>
+
+
+</html>

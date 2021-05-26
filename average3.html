@@ -1,0 +1,290 @@
+<html>
+
+<body style="background-color: #32a67f;">
+
+  <h1 style="text-align: center; font-family: Arial; color: white; margin-top: 100px;">Average: Quiz 3</h1>
+
+  <h2 style="color: black; font-family: Courier new; margin-top: 100px;">5 questions in total:</h2>
+
+
+  <div style="background: white; width: 500px; height: 500px; margin-left: 460px; border: solid 5px black;">
+
+    <input style="width: 400px; margin-left: 50px; height: 40px; margin-top: 20px; font-size: 15px; font-family: Trebuchet MS;" type="text" id="qnsBox" value="Richard has ________ his strength admirable.">
+
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option1" onclick ="firstOption()">find</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option2" onclick = "secondOption()">finding</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option3" onclick="thirdOption()">found</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option4" onclick = "fourthOption()">fouding</button>
+
+
+</div>
+
+<script>
+
+var qnsBox =  document.getElementById("qnsBox");
+var button1 = document.getElementById("option1");
+var button2 = document.getElementById("option2");
+var button3 = document.getElementById("option3");
+var button4 = document.getElementById("option4");
+
+var score =  100;
+
+function firstOption(){
+
+if (qnsBox.value == "Richard has ________ his strength admirable."){
+
+alert("Wrong! The answer is option 3, 'found'.");
+
+qnsBox.value = "Do you ________ to change the world?"
+
+button1.innerHTML = "want";
+button2.innerHTML = "wanting";
+button3.innerHTML = "wanted";
+button4.innerHTML = "wants";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Do you ________ to change the world?"){
+
+alert("Correct! I guess you don't need my help anymore...")
+
+qnsBox.value = "Leonard has ________ with many ideas."
+
+button1.innerHTML = "experiment";
+button2.innerHTML = "experimented";
+button3.innerHTML = "experimenting";
+button4.innerHTML = "experiments";
+
+score = score;
+
+} else if (qnsBox.value == "Leonard has ________ with many ideas."){
+
+alert("Wrong! The answer is option 2, 'experimented'.");
+
+qnsBox.value = "It is ________ to learn more about science."
+
+button1.innerHTML = "fascination";
+button2.innerHTML = "fascinated";
+button3.innerHTML = "fascinate";
+button4.innerHTML = "fascinating";
+
+score =  score - 20;
+} else if (qnsBox.value == "It is ________ to learn more about science."){
+
+  alert("Wrong! The answer is option 4, 'fascinating'.");
+
+
+  qnsBox.value = "Lynda is ________ the new school curriculum."
+
+  button1.innerHTML = "loves";
+  button2.innerHTML = "love";
+  button3.innerHTML = "loving";
+  button4.innerHTML = "loved";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Lynda is ________ the new school curriculum."){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'loving'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+
+function secondOption(){
+
+if (qnsBox.value == "Richard has ________ his strength admirable."){
+
+alert("Wrong! The answer is option 3, 'found'.");
+
+qnsBox.value = "Do you ________ to change the world?"
+
+button1.innerHTML = "want";
+button2.innerHTML = "wanting";
+button3.innerHTML = "wanted";
+button4.innerHTML = "wants";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Do you ________ to change the world?"){
+
+alert("Wrong. The answer is option 1, 'want'.")
+
+qnsBox.value = "Leonard has ________ with many ideas."
+
+button1.innerHTML = "experiment";
+button2.innerHTML = "experimented";
+button3.innerHTML = "experimenting";
+button4.innerHTML = "experiments";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Leonard has ________ with many ideas."){
+
+alert("Correct! It always seems impossible until it's done.");
+
+qnsBox.value = "It is ________ to learn more about science."
+
+button1.innerHTML = "fascination";
+button2.innerHTML = "fascinated";
+button3.innerHTML = "fascinate";
+button4.innerHTML = "fascinating";
+
+score =  score;
+} else if (qnsBox.value == "It is ________ to learn more about science."){
+
+  alert("Wrong! The answer is option 4, 'fascinating'.");
+
+
+  qnsBox.value = "Lynda is ________ the new school curriculum."
+
+  button1.innerHTML = "loves";
+  button2.innerHTML = "love";
+  button3.innerHTML = "loving";
+  button4.innerHTML = "loved";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Lynda is ________ the new school curriculum."){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'loving'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function thirdOption(){
+
+if (qnsBox.value == "Richard has ________ his strength admirable."){
+
+alert("Correct! You're getting really good at this!");
+
+qnsBox.value = "Do you ________ to change the world?"
+
+button1.innerHTML = "want";
+button2.innerHTML = "wanting";
+button3.innerHTML = "wanted";
+button4.innerHTML = "wants";
+
+score = score;
+
+} else if (qnsBox.value == "Do you ________ to change the world?"){
+
+alert("Wrong! The answer is option 1, 'want'.")
+
+qnsBox.value = "Leonard has ________ with many ideas."
+
+button1.innerHTML = "experiment";
+button2.innerHTML = "experimented";
+button3.innerHTML = "experimenting";
+button4.innerHTML = "experiments";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Leonard has ________ with many ideas."){
+
+alert("Wrong! The answer is option 2, 'experimented'.");
+
+qnsBox.value = "It is ________ to learn more about science."
+
+button1.innerHTML = "fascination";
+button2.innerHTML = "fascinated";
+button3.innerHTML = "fascinate";
+button4.innerHTML = "fascinating";
+
+score =  score - 20;
+} else if (qnsBox.value == "It is ________ to learn more about science."){
+
+  alert("Wrong! The answer is option 4, 'fascinating'.");
+
+
+  qnsBox.value = "Lynda is ________ the new school curriculum."
+
+  button1.innerHTML = "loves";
+  button2.innerHTML = "love";
+  button3.innerHTML = "loving";
+  button4.innerHTML = "loved";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Lynda is ________ the new school curriculum."){
+
+score = score;
+alert("Correct! Look who's the professional now! Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+
+function fourthOption(){
+
+if (qnsBox.value == "Richard has ________ his strength admirable."){
+
+alert("Wrong! The answer is option 3, 'found'.");
+
+qnsBox.value = "Do you ________ to change the world?"
+
+button1.innerHTML = "want";
+button2.innerHTML = "wanting";
+button3.innerHTML = "wanted";
+button4.innerHTML = "wants";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Do you ________ to change the world?"){
+
+alert("Wrong! The answer is option 1, 'want'.")
+
+qnsBox.value = "Leonard has ________ with many ideas."
+
+button1.innerHTML = "experiment";
+button2.innerHTML = "experimented";
+button3.innerHTML = "experimenting";
+button4.innerHTML = "experiments";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Leonard has ________ with many ideas."){
+
+alert("Wrong! The answer is option 2, 'experimented'.");
+
+qnsBox.value = "It is ________ to learn more about science."
+
+button1.innerHTML = "fascination";
+button2.innerHTML = "fascinated";
+button3.innerHTML = "fascinate";
+button4.innerHTML = "fascinating";
+
+score =  score - 20;
+} else if (qnsBox.value == "It is ________ to learn more about science."){
+
+  alert("Correct! Amazing job, fellow adventurer!");
+
+
+  qnsBox.value = "Lynda is ________ the new school curriculum."
+
+  button1.innerHTML = "loves";
+  button2.innerHTML = "love";
+  button3.innerHTML = "loving";
+  button4.innerHTML = "loved";
+
+  score = score;
+
+} else if (qnsBox.value == "Lynda is ________ the new school curriculum."){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'loving'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+</script>
+</body>
+
+
+</html>

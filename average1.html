@@ -1,0 +1,294 @@
+<html>
+
+<body style="background-color: #32a67f;">
+
+  <h1 style="text-align: center; font-family: Arial; color: white; margin-top: 100px;">Average: Quiz 1</h1>
+
+  <h2 style="color: black; font-family: Courier new; margin-top: 100px;">5 questions in total:</h2>
+
+
+  <div style="background: white; width: 500px; height: 500px; margin-left: 460px; border: solid 5px black;">
+
+    <input style="width: 400px; margin-left: 50px; height: 40px; margin-top: 20px; font-size: 15px; font-family: Trebuchet MS;" type="text" id="qnsBox" value="Mary ________ towards the bus stop.">
+
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option1" onclick ="firstOption()">runs</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option2" onclick = "secondOption()">ran</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option3" onclick="thirdOption()">running</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option4" onclick = "fourthOption()">run</button>
+
+
+</div>
+
+<script>
+
+var qnsBox =  document.getElementById("qnsBox");
+var button1 = document.getElementById("option1");
+var button2 = document.getElementById("option2");
+var button3 = document.getElementById("option3");
+var button4 = document.getElementById("option4");
+
+var score =  100;
+
+function firstOption(){
+
+if (qnsBox.value == "Mary ________ towards the bus stop."){
+
+alert("Wrong! The answer is option 2, 'ran'!");
+
+qnsBox.value = "John does not ________ to write books."
+
+button1.innerHTML = "like";
+button2.innerHTML = "likes";
+button3.innerHTML = "liked";
+button4.innerHTML = "liking";
+
+score = score - 20;
+
+} else if (qnsBox.value == "John does not ________ to write books."){
+
+alert("Correct! Well done!")
+
+qnsBox.value = "Tony is ________ to run laps around the courtyard."
+
+button1.innerHTML = "plan";
+button2.innerHTML = "plans";
+button3.innerHTML = "planned";
+button4.innerHTML = "planning";
+
+score = score;
+
+} else if (qnsBox.value == "Tony is ________ to run laps around the courtyard."){
+
+alert("Wrong! The correct answer is option 4, 'planning'.");
+
+qnsBox.value = "Mark ________ to relax, but could not."
+
+button1.innerHTML = "wants";
+button2.innerHTML = "wanted";
+button3.innerHTML = "want";
+button4.innerHTML = "wanting";
+
+score =  score - 20;
+} else if (qnsBox.value == "Mark ________ to relax, but could not."){
+
+  alert("Wrong! The answer is option 2, 'wanted'.");
+
+
+  qnsBox.value = "Jeff finds ________ difficult, but relaxing."
+
+  button1.innerHTML = "jog";
+  button2.innerHTML = "jogs";
+  button3.innerHTML = "jogging";
+  button4.innerHTML = "jogged";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Jeff finds ________ difficult, but relaxing."){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'jogging'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+
+function secondOption(){
+
+  if (qnsBox.value == "Mary ________ towards the bus stop."){
+
+alert("Correct!");
+
+qnsBox.value = "John does not ________ to write books."
+
+button1.innerHTML = "like";
+button2.innerHTML = "likes";
+button3.innerHTML = "liked";
+button4.innerHTML = "liking";
+
+score = score;
+} else if (qnsBox.value == "John does not ________ to write books."){
+
+alert("Wrong! The answer is option 1, 'like'.")
+
+qnsBox.value = "Tony is ________ to run laps around the courtyard."
+
+button1.innerHTML = "plan";
+button2.innerHTML = "plans";
+button3.innerHTML = "planned";
+button4.innerHTML = "planning";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Tony is ________ to run laps around the courtyard."){
+
+alert("Wrong! The correct answer is option 4, 'planning'.");
+
+qnsBox.value = "Mark ________ to relax, but could not."
+
+button1.innerHTML = "wants";
+button2.innerHTML = "wanted";
+button3.innerHTML = "want";
+button4.innerHTML = "wanting";
+
+score = score - 20;
+} else if (qnsBox.value == "Mark ________ to relax, but could not."){
+
+  alert("Correct, well done mate!");
+
+  qnsBox.value = "Jeff finds ________ difficult, but relaxing."
+
+  button1.innerHTML = "jog";
+  button2.innerHTML = "jogs";
+  button3.innerHTML = "jogging";
+  button4.innerHTML = "jogged";
+
+  score = score;
+
+} else if (qnsBox.value == "Jeff finds ________ difficult, but relaxing."){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'jogging'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+
+}
+
+
+}
+
+function thirdOption(){
+
+  if (qnsBox.value == "Mary ________ towards the bus stop."){
+
+alert("Wrong! The answer is option 2, 'ran'!");
+
+qnsBox.value = "John does not ________ to write books."
+
+button1.innerHTML = "like";
+button2.innerHTML = "likes";
+button3.innerHTML = "liked";
+button4.innerHTML = "liking";
+
+score = score - 20;
+
+} else if (qnsBox.value == "John does not ________ to write books."){
+
+alert("Wrong! The answer is option 1, 'like'.")
+qnsBox.value = "Tony is ________ to run laps around the courtyard."
+
+button1.innerHTML = "plan";
+button2.innerHTML = "plans";
+button3.innerHTML = "planned";
+button4.innerHTML = "planning"
+
+score = score - 20;
+
+} else if (qnsBox.value == "Tony is ________ to run laps around the courtyard."){
+
+alert("Wrong! The answer is option 4, 'planning'.");
+
+qnsBox.value = "Mark ________ to relax, but could not."
+
+button1.innerHTML = "wants";
+button2.innerHTML = "wanted";
+button3.innerHTML = "want";
+button4.innerHTML = "wanting";
+
+score = score - 20;
+} else if (qnsBox.value == "Mark ________ to relax, but could not."){
+
+  alert("Wrong! The answer is option 2, 'wanted'.");
+
+  qnsBox.value = "Jeff finds ________ difficult, but relaxing."
+
+  button1.innerHTML = "jog";
+  button2.innerHTML = "jogs";
+  button3.innerHTML = "jogging";
+  button4.innerHTML = "jogged";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Jeff finds ________ difficult, but relaxing."){
+
+score = score;
+alert("Correct! Excellent job mate! Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+
+}
+}
+
+
+
+
+
+function fourthOption(){
+
+  if (qnsBox.value == "Mary ________ towards the bus stop."){
+
+alert("Wrong! The answer is option 2, 'ran'!");
+
+qnsBox.value = "John does not ________ to write books."
+
+button1.innerHTML = "like";
+button2.innerHTML = "likes";
+button3.innerHTML = "liked";
+button4.innerHTML = "liking";
+
+score = score - 20;
+} else if (qnsBox.value == "John does not ________ to write books."){
+
+alert("Wrong! The answer is option 1, 'like'.")
+
+qnsBox.value = "Tony is ________ to run laps around the courtyard."
+
+button1.innerHTML = "plan";
+button2.innerHTML = "plans";
+button3.innerHTML = "planned";
+button4.innerHTML = "planning"
+
+score = score - 20;
+
+} else if (qnsBox.value == "Tony is ________ to run laps around the courtyard."){
+
+alert("Correct! You're getting good at this, man!");
+
+qnsBox.value = "Mark ________ to relax, but could not."
+
+button1.innerHTML = "wants";
+button2.innerHTML = "wanted";
+button3.innerHTML = "want";
+button4.innerHTML = "wanting";
+
+score = score;
+} else if (qnsBox.value == "Mark ________ to relax, but could not."){
+
+  alert("Wrong! The answer is option 2, 'wanted'.");
+
+  qnsBox.value = "Jeff finds ________ difficult, but relaxing."
+
+  button1.innerHTML = "jog";
+  button2.innerHTML = "jogs";
+  button3.innerHTML = "jogging";
+  button4.innerHTML = "jogged";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Jeff finds ________ difficult, but relaxing."){
+
+  score = score - 20;
+
+alert("Wrong! The answer is option 3, 'jogging'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+
+}
+
+}
+
+
+
+
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,287 @@
+<html>
+
+<body style="background-color: #e67d75;">
+
+  <h1 style="text-align: center; font-family: Arial; color: white; margin-top: 100px;">Difficult: Quiz 2</h1>
+
+  <h2 style="color: black; font-family: Courier new; margin-top: 100px;">5 questions in total:</h2>
+
+
+  <div style="background: white; width: 500px; height: 500px; margin-left: 460px; border: solid 5px black;">
+
+    <input style="width: 400px; margin-left: 50px; height: 40px; margin-top: 20px; font-size: 15px; font-family: Trebuchet MS;" type="text" id="qnsBox" value="John ________ towards the supermarket quickly.">
+
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option1" onclick ="firstOption()">strolled</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option2" onclick = "secondOption()">trekked</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option3" onclick="thirdOption()">marched</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option4" onclick = "fourthOption()">bolted</button>
+
+
+</div>
+
+<script>
+
+var qnsBox =  document.getElementById("qnsBox");
+var button1 = document.getElementById("option1");
+var button2 = document.getElementById("option2");
+var button3 = document.getElementById("option3");
+var button4 = document.getElementById("option4");
+
+var score =  100;
+
+function firstOption(){
+
+if (qnsBox.value == "John ________ towards the supermarket quickly."){
+
+alert("Wrong! The answer is option 4, 'bolted'.");
+
+qnsBox.value = "The enlightening speech ________ his spirit."
+
+button1.innerHTML = "inspired";
+button2.innerHTML = "elevated";
+button3.innerHTML = "lowered";
+button4.innerHTML = "crushed";
+
+score = score - 20;
+
+} else if (qnsBox.value == "The enlightening speech ________ his spirit."){
+
+alert("Wrong! The answer is option 2, 'elevated'.")
+
+qnsBox.value = "What is another word for 'inspired'?"
+
+button1.innerHTML = "enlightened";
+button2.innerHTML = "dull";
+button3.innerHTML = "stimulate";
+button4.innerHTML = "intuitive";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'inspired'?"){
+
+alert("Wrong! The answer is option 3, 'stimulate'.");
+
+qnsBox.value = "She developed ________ while interacting with animals."
+
+button1.innerHTML = "courage";
+button2.innerHTML = "sadness";
+button3.innerHTML = "happiness";
+button4.innerHTML = "curiosity";
+
+score =  score - 20;
+} else if (qnsBox.value == "She developed ________ while interacting with animals."){
+
+  alert("Correct! You're pretty courageous yourself.");
+
+
+  qnsBox.value = "I am confident that this will turn ________ well.";
+
+  button1.innerHTML = "in";
+  button2.innerHTML = "at";
+  button3.innerHTML = "with";
+  button4.innerHTML = "out";
+
+  score = score;
+
+} else if (qnsBox.value == "I am confident that this will turn ________ well."){
+
+score = score - 20;
+alert("Wrong! The answer is option 4, 'out'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function secondOption(){
+
+if (qnsBox.value == "John ________ towards the supermarket quickly."){
+
+alert("Wrong! The answer is option 4, 'bolted'.");
+
+qnsBox.value = "The enlightening speech ________ his spirit."
+
+button1.innerHTML = "inspired";
+button2.innerHTML = "elevated";
+button3.innerHTML = "lowered";
+button4.innerHTML = "crushed";
+
+score = score - 20;
+
+} else if (qnsBox.value == "The enlightening speech ________ his spirit."){
+
+alert("Correct! Are you the next Albert Einstein?")
+
+qnsBox.value = "What is another word for 'inspired'?"
+
+button1.innerHTML = "enlightened";
+button2.innerHTML = "dull";
+button3.innerHTML = "stimulate";
+button4.innerHTML = "intuitive";
+
+score = score;
+
+} else if (qnsBox.value == "What is another word for 'inspired'?"){
+
+alert("Wrong! The answer is option 3, 'stimulate'.");
+
+qnsBox.value = "She developed ________ while interacting with animals."
+
+button1.innerHTML = "courage";
+button2.innerHTML = "sadness";
+button3.innerHTML = "happiness";
+button4.innerHTML = "curiosity";
+
+score =  score - 20;
+} else if (qnsBox.value == "She developed ________ while interacting with animals."){
+
+  alert("Wrong! The answer is option 1, 'courage'.");
+
+
+  qnsBox.value = "I am confident that this will turn ________ well.";
+
+  button1.innerHTML = "in";
+  button2.innerHTML = "at";
+  button3.innerHTML = "with";
+  button4.innerHTML = "out";
+
+  score = score -  20;
+
+} else if (qnsBox.value == "I am confident that this will turn ________ well."){
+
+score = score - 20;
+alert("Wrong! The answer is option 4, 'out'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function thirdOption(){
+
+if (qnsBox.value == "John ________ towards the supermarket quickly."){
+
+alert("Wrong! The answer is option 4, 'bolted'.");
+
+qnsBox.value = "The enlightening speech ________ his spirit."
+
+button1.innerHTML = "inspired";
+button2.innerHTML = "elevated";
+button3.innerHTML = "lowered";
+button4.innerHTML = "crushed";
+
+score = score - 20;
+
+} else if (qnsBox.value == "The enlightening speech ________ his spirit."){
+
+alert("Wrong! The answer is option 2, 'elevated'.")
+
+qnsBox.value = "What is another word for 'inspired'?"
+
+button1.innerHTML = "enlightened";
+button2.innerHTML = "dull";
+button3.innerHTML = "stimulate";
+button4.innerHTML = "intuitive";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'inspired'?"){
+
+alert("Correct! Well done!");
+
+qnsBox.value = "She developed ________ while interacting with animals."
+
+button1.innerHTML = "courage";
+button2.innerHTML = "sadness";
+button3.innerHTML = "happiness";
+button4.innerHTML = "curiosity";
+
+score =  score;
+} else if (qnsBox.value == "She developed ________ while interacting with animals."){
+
+  alert("Wrong! The answer is option 1, 'courage'.");
+
+
+  qnsBox.value = "I am confident that this will turn ________ well.";
+
+  button1.innerHTML = "in";
+  button2.innerHTML = "at";
+  button3.innerHTML = "with";
+  button4.innerHTML = "out";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "I am confident that this will turn ________ well."){
+
+score = score - 20;
+alert("Wrong! The answer is option 4, 'out'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function fourthOption(){
+
+if (qnsBox.value == "John ________ towards the supermarket quickly."){
+
+alert("Correct! I'm starting to think that you should teach me.");
+
+qnsBox.value = "The enlightening speech ________ his spirit."
+
+button1.innerHTML = "inspired";
+button2.innerHTML = "elevated";
+button3.innerHTML = "lowered";
+button4.innerHTML = "crushed";
+
+score = score;
+
+} else if (qnsBox.value == "The enlightening speech ________ his spirit."){
+
+alert("Wrong! The answer is option 2, 'elevated'.")
+
+qnsBox.value = "What is another word for 'inspired'?"
+
+button1.innerHTML = "enlightened";
+button2.innerHTML = "dull";
+button3.innerHTML = "stimulate";
+button4.innerHTML = "intuitive";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'inspired'?"){
+
+alert("Wrong! The answer is option 3, 'stimulate'.");
+
+qnsBox.value = "She developed ________ while interacting with animals."
+
+button1.innerHTML = "courage";
+button2.innerHTML = "sadness";
+button3.innerHTML = "happiness";
+button4.innerHTML = "curiosity";
+
+score =  score - 20;
+} else if (qnsBox.value == "She developed ________ while interacting with animals."){
+
+  alert("Wrong! The answer is option 1, 'courage'.");
+
+
+  qnsBox.value = "I am confident that this will turn ________ well.";
+
+  button1.innerHTML = "in";
+  button2.innerHTML = "at";
+  button3.innerHTML = "with";
+  button4.innerHTML = "out";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "I am confident that this will turn ________ well."){
+
+score = score;
+alert("Correct! Tony stark loves you 3000. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+</script>
+</body>
+
+
+</html>

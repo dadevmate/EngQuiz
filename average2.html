@@ -1,0 +1,295 @@
+<html>
+
+<body style="background-color: #32a67f;">
+
+  <h1 style="text-align: center; font-family: Arial; color: white; margin-top: 100px;">Average: Quiz 2</h1>
+
+  <h2 style="color: black; font-family: Courier new; margin-top: 100px;">5 questions in total:</h2>
+
+
+  <div style="background: white; width: 500px; height: 500px; margin-left: 460px; border: solid 5px black;">
+
+    <input style="width: 400px; margin-left: 50px; height: 40px; margin-top: 20px; font-size: 15px; font-family: Trebuchet MS;" type="text" id="qnsBox" value="Johnathan does not ________ ice cream.">
+
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option1" onclick ="firstOption()">hate</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option2" onclick = "secondOption()">hates</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option3" onclick="thirdOption()">hating</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option4" onclick = "fourthOption()">hated</button>
+
+
+</div>
+
+<script>
+
+var qnsBox =  document.getElementById("qnsBox");
+var button1 = document.getElementById("option1");
+var button2 = document.getElementById("option2");
+var button3 = document.getElementById("option3");
+var button4 = document.getElementById("option4");
+
+var score =  100;
+
+function firstOption(){
+
+if (qnsBox.value == "Johnathan does not ________ ice cream."){
+
+alert("Correct! Well done!");
+
+qnsBox.value = "Ram ________ that group of people."
+
+button1.innerHTML = "annialates";
+button2.innerHTML = "annialate";
+button3.innerHTML = "annialated";
+button4.innerHTML = "annialating";
+
+score = score;
+
+} else if (qnsBox.value == "Ram ________ that group of people."){
+
+alert("Wrong! The answer is option 3, 'annialated'")
+
+qnsBox.value = "Darryl ________ everyone to read books."
+
+button1.innerHTML = "encouraging";
+button2.innerHTML = "encourage";
+button3.innerHTML = "encouraged";
+button4.innerHTML = "encourages";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Darryl ________ everyone to read books."){
+
+alert("Wrong! The correct answer is option 4, 'encourages'.");
+
+qnsBox.value = "Lionel has ________ to have a walk in the park."
+
+button1.innerHTML = "decide";
+button2.innerHTML = "decided";
+button3.innerHTML = "deciding";
+button4.innerHTML = "decides";
+
+score =  score - 20;
+} else if (qnsBox.value == "Lionel has ________ to have a walk in the park."){
+
+  alert("Wrong! The answer is option 2, 'decided'.");
+
+
+  qnsBox.value = "Rachel ________ to solve the difficult question."
+
+  button1.innerHTML = "tries";
+  button2.innerHTML = "trying";
+  button3.innerHTML = "tried";
+  button4.innerHTML = "try";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Rachel ________ to solve the difficult question."){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'tried'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function secondOption(){
+
+if (qnsBox.value == "Johnathan does not ________ ice cream."){
+
+alert("Wrong! The answer is option 1, 'hate'");
+
+qnsBox.value = "Ram ________ that group of people."
+
+button1.innerHTML = "annialates";
+button2.innerHTML = "annialate";
+button3.innerHTML = "annialated";
+button4.innerHTML = "annialating";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Ram ________ that group of people."){
+
+alert("Wrong! The answer is option 3, 'annialated'")
+
+qnsBox.value = "Darryl ________ everyone to read books."
+
+button1.innerHTML = "encouraging";
+button2.innerHTML = "encourage";
+button3.innerHTML = "encouraged";
+button4.innerHTML = "encourages";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Darryl ________ everyone to read books."){
+
+alert("Wrong! The correct answer is option 4, 'encourages'.");
+
+qnsBox.value = "Lionel has ________ to have a walk in the park."
+
+button1.innerHTML = "decide";
+button2.innerHTML = "decided";
+button3.innerHTML = "deciding";
+button4.innerHTML = "decides";
+
+score =  score - 20;
+} else if (qnsBox.value == "Lionel has ________ to have a walk in the park."){
+
+  alert("Correct! You have mastered the art of grammar!");
+
+
+  qnsBox.value = "Rachel ________ to solve the difficult question."
+
+  button1.innerHTML = "tries";
+  button2.innerHTML = "trying";
+  button3.innerHTML = "tried";
+  button4.innerHTML = "try";
+
+  score = score;
+
+} else if (qnsBox.value == "Rachel ________ to solve the difficult question."){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'tried'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function thirdOption(){
+
+if (qnsBox.value == "Johnathan does not ________ ice cream."){
+
+alert("Wrong! The answer is option 1, 'hate'");
+
+qnsBox.value = "Ram ________ that group of people."
+
+button1.innerHTML = "annialates";
+button2.innerHTML = "annialate";
+button3.innerHTML = "annialated";
+button4.innerHTML = "annialating";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Ram ________ that group of people."){
+
+alert("Correct! As always, it's a pleasure watching you work, sir.")
+
+qnsBox.value = "Darryl ________ everyone to read books."
+
+button1.innerHTML = "encouraging";
+button2.innerHTML = "encourage";
+button3.innerHTML = "encouraged";
+button4.innerHTML = "encourages";
+
+score = score;
+
+} else if (qnsBox.value == "Darryl ________ everyone to read books."){
+
+alert("Wrong! The correct answer is option 4, 'encourages'.");
+
+qnsBox.value = "Lionel has ________ to have a walk in the park."
+
+button1.innerHTML = "decide";
+button2.innerHTML = "decided";
+button3.innerHTML = "deciding";
+button4.innerHTML = "decides";
+
+score =  score - 20;
+} else if (qnsBox.value == "Lionel has ________ to have a walk in the park."){
+
+  alert("Wrong! The answer is option 2, 'decided'.");
+
+
+  qnsBox.value = "Rachel ________ to solve the difficult question."
+
+  button1.innerHTML = "tries";
+  button2.innerHTML = "trying";
+  button3.innerHTML = "tried";
+  button4.innerHTML = "try";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Rachel ________ to solve the difficult question."){
+
+score = score;
+alert("Correct! You give the word professional a new meaning! Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function fourthOption(){
+
+if (qnsBox.value == "Johnathan does not ________ ice cream."){
+
+alert("Wrong! The answer is option 1, 'hate'.");
+
+qnsBox.value = "Ram ________ that group of people."
+
+button1.innerHTML = "annialates";
+button2.innerHTML = "annialate";
+button3.innerHTML = "annialated";
+button4.innerHTML = "annialating";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Ram ________ that group of people."){
+
+alert("Wrong! The answer is option 3, 'annialated'")
+
+qnsBox.value = "Darryl ________ everyone to read books."
+
+button1.innerHTML = "encouraging";
+button2.innerHTML = "encourage";
+button3.innerHTML = "encouraged";
+button4.innerHTML = "encourages";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Darryl ________ everyone to read books."){
+
+alert("Correct! Awesome dude!.");
+
+qnsBox.value = "Lionel has ________ to have a walk in the park."
+
+button1.innerHTML = "decide";
+button2.innerHTML = "decided";
+button3.innerHTML = "deciding";
+button4.innerHTML = "decides";
+
+score =  score;
+} else if (qnsBox.value == "Lionel has ________ to have a walk in the park."){
+
+  alert("Wrong! The answer is option 2, 'decided'.");
+
+
+  qnsBox.value = "Rachel ________ to solve the difficult question."
+
+  button1.innerHTML = "tries";
+  button2.innerHTML = "trying";
+  button3.innerHTML = "tried";
+  button4.innerHTML = "try";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Rachel ________ to solve the difficult question."){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'tried'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+
+
+
+
+
+
+
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,288 @@
+<html>
+
+<body style="background-color: #f2a311;">
+
+  <h1 style="text-align: center; font-family: Arial; color: white; margin-top: 100px;">Normal: Quiz 2</h1>
+
+  <h2 style="color: black; font-family: Courier new; margin-top: 100px;">5 questions in total:</h2>
+
+
+  <div style="background: white; width: 500px; height: 500px; margin-left: 460px; border: solid 5px black;">
+
+    <input style="width: 400px; margin-left: 50px; height: 40px; margin-top: 20px; font-size: 15px; font-family: Trebuchet MS;" type="text" id="qnsBox" value="Which word has the same meaning as 'hidden'?">
+
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option1" onclick ="firstOption()">clear</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option2" onclick = "secondOption()">disguise</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option3" onclick="thirdOption()">concealed</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option4" onclick = "fourthOption()">lost</button>
+
+
+</div>
+
+<script>
+
+var qnsBox =  document.getElementById("qnsBox");
+var button1 = document.getElementById("option1");
+var button2 = document.getElementById("option2");
+var button3 = document.getElementById("option3");
+var button4 = document.getElementById("option4");
+
+var score =  100;
+
+function firstOption(){
+
+if (qnsBox.value == "Which word has the same meaning as 'hidden'?"){
+
+alert("Wrong! The answer is option 3, 'concealed'.");
+
+qnsBox.value = "Which word has a similar meaning to 'send'?"
+
+button1.innerHTML = "post";
+button2.innerHTML = "receive";
+button3.innerHTML = "take";
+button4.innerHTML = "retrieve";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Which word has a similar meaning to 'send'?"){
+
+alert("Correct! You're a smart one!")
+
+qnsBox.value = "Darren ________ the information carefully."
+
+button1.innerHTML = "took";
+button2.innerHTML = "gave";
+button3.innerHTML = "check";
+button4.innerHTML = "analyzed";
+
+score = score;
+
+} else if (qnsBox.value == "Darren ________ the information carefully."){
+
+alert("Wrong! The answer is option 4, 'analyzed'.");
+
+qnsBox.value = "She was keen ________ learning new things."
+
+button1.innerHTML = "at";
+button2.innerHTML = "on";
+button3.innerHTML = "is";
+button4.innerHTML = "about";
+
+score =  score - 20;
+} else if (qnsBox.value == "She was keen ________ learning new things."){
+
+  alert("Wrong! The answer is option 2, 'on'.");
+
+
+  qnsBox.value = "Which word has the same meaning as 'private'?"
+
+  button1.innerHTML = "close";
+  button2.innerHTML = "intimate";
+  button3.innerHTML = "public";
+  button4.innerHTML = "confidential";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Which word has the same meaning as 'private'?"){
+
+score = score - 20;
+alert("Wrong! The answer is option 4, 'confidential'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+
+function secondOption(){
+
+if (qnsBox.value == "Which word has the same meaning as 'hidden'?"){
+
+alert("Wrong! The answer is option 3, 'concealed'.");
+
+qnsBox.value = "Which word has a similar meaning to 'send'?"
+
+button1.innerHTML = "post";
+button2.innerHTML = "receive";
+button3.innerHTML = "take";
+button4.innerHTML = "retrieve";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Which word has a similar meaning to 'send'?"){
+
+alert("Wrong! The answer is option 1, 'post'.")
+
+qnsBox.value = "Darren ________ the information carefully."
+
+button1.innerHTML = "took";
+button2.innerHTML = "gave";
+button3.innerHTML = "check";
+button4.innerHTML = "analyzed";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Darren ________ the information carefully."){
+
+alert("Wrong! The answer is option 4, 'analyzed'.");
+
+qnsBox.value = "She was keen ________ learning new things."
+
+button1.innerHTML = "at";
+button2.innerHTML = "on";
+button3.innerHTML = "is";
+button4.innerHTML = "about";
+
+score =  score - 20;
+} else if (qnsBox.value == "She was keen ________ learning new things."){
+
+  alert("Correct! Can we switch brains? You're too smart.");
+
+
+  qnsBox.value = "Which word has the same meaning as 'private'?"
+
+  button1.innerHTML = "close";
+  button2.innerHTML = "intimate";
+  button3.innerHTML = "public";
+  button4.innerHTML = "confidential";
+
+  score = score;
+
+} else if (qnsBox.value == "Which word has the same meaning as 'private'?"){
+
+score = score - 20;
+alert("Wrong! The answer is option 4, 'confidential'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function thirdOption(){
+
+if (qnsBox.value == "Which word has the same meaning as 'hidden'?"){
+
+alert("Correct! What a genius!");
+
+qnsBox.value = "Which word has a similar meaning to 'send'?"
+
+button1.innerHTML = "post";
+button2.innerHTML = "receive";
+button3.innerHTML = "take";
+button4.innerHTML = "retrieve";
+
+score = score;
+
+} else if (qnsBox.value == "Which word has a similar meaning to 'send'?"){
+
+alert("Wrong! The answer is option 1, 'post'.")
+
+qnsBox.value = "Darren ________ the information carefully."
+
+button1.innerHTML = "took";
+button2.innerHTML = "gave";
+button3.innerHTML = "check";
+button4.innerHTML = "analyzed";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Darren ________ the information carefully."){
+
+alert("Wrong! The answer is option 4, 'analyzed'.");
+
+qnsBox.value = "She was keen ________ learning new things."
+
+button1.innerHTML = "at";
+button2.innerHTML = "on";
+button3.innerHTML = "is";
+button4.innerHTML = "about";
+
+score =  score - 20;
+} else if (qnsBox.value == "She was keen ________ learning new things."){
+
+  alert("Wrong! The answer is option 2, 'on'.");
+
+
+  qnsBox.value = "Which word has the same meaning as 'private'?"
+
+  button1.innerHTML = "close";
+  button2.innerHTML = "intimate";
+  button3.innerHTML = "public";
+  button4.innerHTML = "confidential";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Which word has the same meaning as 'private'?"){
+
+score = score - 20;
+alert("Wrong! The answer is option 4, 'confidential'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function fourthOption(){
+
+if (qnsBox.value == "Which word has the same meaning as 'hidden'?"){
+
+alert("Wrong! The answer is option 3, 'concealed'.");
+
+qnsBox.value = "Which word has a similar meaning to 'send'?"
+
+button1.innerHTML = "post";
+button2.innerHTML = "receive";
+button3.innerHTML = "take";
+button4.innerHTML = "retrieve";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Which word has a similar meaning to 'send'?"){
+
+alert("Wrong! The answer is option 1, 'post'.")
+
+qnsBox.value = "Darren ________ the information carefully."
+
+button1.innerHTML = "took";
+button2.innerHTML = "gave";
+button3.innerHTML = "check";
+button4.innerHTML = "analyzed";
+
+score = score - 20;
+
+} else if (qnsBox.value == "Darren ________ the information carefully."){
+
+alert("Correct! Mind helping me out?");
+
+qnsBox.value = "She was keen ________ learning new things."
+
+button1.innerHTML = "at";
+button2.innerHTML = "on";
+button3.innerHTML = "is";
+button4.innerHTML = "about";
+
+score =  score;
+} else if (qnsBox.value == "She was keen ________ learning new things."){
+
+  alert("Wrong! The answer is option 2, 'on'.");
+
+
+  qnsBox.value = "Which word has the same meaning as 'private'?"
+
+  button1.innerHTML = "close";
+  button2.innerHTML = "intimate";
+  button3.innerHTML = "public";
+  button4.innerHTML = "confidential";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "Which word has the same meaning as 'private'?"){
+
+score = score;
+alert("Correct! Dude, you're amazing at this! Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+</script>
+</body>
+
+
+</html>

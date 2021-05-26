@@ -1,0 +1,290 @@
+<html>
+
+<body style="background-color: #e67d75;">
+
+  <h1 style="text-align: center; font-family: Arial; color: white; margin-top: 100px;">Difficult: Quiz 3</h1>
+
+  <h2 style="color: black; font-family: Courier new; margin-top: 100px;">5 questions in total:</h2>
+
+
+  <div style="background: white; width: 500px; height: 500px; margin-left: 460px; border: solid 5px black;">
+
+    <input style="width: 400px; margin-left: 50px; height: 40px; margin-top: 20px; font-size: 15px; font-family: Trebuchet MS;" type="text" id="qnsBox" value="Mary was highly ________ the board meeting.">
+
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option1" onclick ="firstOption()">anticipated</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option2" onclick = "secondOption()">encouraged</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option3" onclick="thirdOption()">anticipating</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option4" onclick = "fourthOption()">encouraging</button>
+
+
+</div>
+
+<script>
+
+var qnsBox =  document.getElementById("qnsBox");
+var button1 = document.getElementById("option1");
+var button2 = document.getElementById("option2");
+var button3 = document.getElementById("option3");
+var button4 = document.getElementById("option4");
+
+var score =  100;
+
+function firstOption(){
+
+if (qnsBox.value == "Mary was highly ________ the board meeting."){
+
+alert("Wrong! The answer is option 3, 'anticipating'.");
+
+qnsBox.value = "He was ________ by his multiple failures."
+
+button1.innerHTML = "shaken";
+button2.innerHTML = "demoralized";
+button3.innerHTML = "inspired";
+button4.innerHTML = "encouraged";
+
+score = score - 20;
+
+} else if (qnsBox.value == "He was ________ by his multiple failures."){
+
+alert("Wrong! The answer is option 2, 'demoralized'.")
+
+qnsBox.value = "What is another word for 'intricate'?"
+
+button1.innerHTML = "circuitous";
+button2.innerHTML = "simple";
+button3.innerHTML = "straighforward";
+button4.innerHTML = "elaborate";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'intricate'?"){
+
+alert("Correct! You're the boss!");
+
+qnsBox.value = "Give an example of a preposition."
+
+button1.innerHTML = "a";
+button2.innerHTML = "was";
+button3.innerHTML = "is";
+button4.innerHTML = "at";
+
+score =  score;
+} else if (qnsBox.value == "Give an example of a preposition."){
+
+  alert("Wrong! The answer is option 4, 'at'.");
+
+
+  qnsBox.value = "What is another word for 'examine'?";
+
+  button1.innerHTML = "detail";
+  button2.innerHTML = "study";
+  button3.innerHTML = "test";
+  button4.innerHTML = "revise";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'examine'?"){
+
+score = score - 20;
+alert("Wrong! The answer is option 2, 'study'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function secondOption(){
+
+if (qnsBox.value == "Mary was highly ________ the board meeting."){
+
+alert("Wrong! The answer is option 3, 'anticipating'.");
+
+qnsBox.value = "He was ________ by his multiple failures."
+
+button1.innerHTML = "shaken";
+button2.innerHTML = "demoralized";
+button3.innerHTML = "inspired";
+button4.innerHTML = "encouraged";
+
+score = score - 20;
+
+} else if (qnsBox.value == "He was ________ by his multiple failures."){
+
+alert("Correct! I bet you anything that you're gonna change the world one day!");
+
+qnsBox.value = "What is another word for 'intricate'?"
+
+button1.innerHTML = "circuitous";
+button2.innerHTML = "simple";
+button3.innerHTML = "straighforward";
+button4.innerHTML = "elaborate";
+
+score = score;
+
+} else if (qnsBox.value == "What is another word for 'intricate'?"){
+
+alert("Wrong! The answer is option 1, 'circuitous'.");
+
+qnsBox.value = "Give an example of a preposition."
+
+button1.innerHTML = "a";
+button2.innerHTML = "was";
+button3.innerHTML = "is";
+button4.innerHTML = "at";
+
+score = score - 20;
+} else if (qnsBox.value == "Give an example of a preposition."){
+
+  alert("Wrong! The answer is option 4, 'at'.");
+
+
+  qnsBox.value = "What is another word for 'examine'?";
+
+  button1.innerHTML = "detail";
+  button2.innerHTML = "study";
+  button3.innerHTML = "test";
+  button4.innerHTML = "revise";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'examine'?"){
+
+score = score;
+alert("Correct! When one story ends, another one begins! Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+
+function thirdOption(){
+
+if (qnsBox.value == "Mary was highly ________ the board meeting."){
+
+alert("Correct! Good job!");
+
+qnsBox.value = "He was ________ by his multiple failures."
+
+button1.innerHTML = "shaken";
+button2.innerHTML = "demoralized";
+button3.innerHTML = "inspired";
+button4.innerHTML = "encouraged";
+
+score = score;
+
+} else if (qnsBox.value == "He was ________ by his multiple failures."){
+
+alert("Wrong! The answer is option 2, 'demoralized'.")
+
+qnsBox.value = "What is another word for 'intricate'?"
+
+button1.innerHTML = "circuitous";
+button2.innerHTML = "simple";
+button3.innerHTML = "straighforward";
+button4.innerHTML = "elaborate";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'intricate'?"){
+
+alert("Wrong! The answer is option 1, 'circuitous'.");
+
+qnsBox.value = "Give an example of a preposition."
+
+button1.innerHTML = "a";
+button2.innerHTML = "was";
+button3.innerHTML = "is";
+button4.innerHTML = "at";
+
+score =  score - 20;
+} else if (qnsBox.value == "Give an example of a preposition."){
+
+  alert("Wrong! The answer is option 4, 'at'.");
+
+
+  qnsBox.value = "What is another word for 'examine'?";
+
+  button1.innerHTML = "detail";
+  button2.innerHTML = "study";
+  button3.innerHTML = "test";
+  button4.innerHTML = "revise";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'examine'?"){
+
+score = score - 20;
+alert("Wrong! The answer is option 2, 'study'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+
+function fourthOption(){
+
+if (qnsBox.value == "Mary was highly ________ the board meeting."){
+
+alert("Wrong! The answer is option 3, 'anticipating'.");
+
+qnsBox.value = "He was ________ by his multiple failures."
+
+button1.innerHTML = "shaken";
+button2.innerHTML = "demoralized";
+button3.innerHTML = "inspired";
+button4.innerHTML = "encouraged";
+
+score = score - 20;
+
+} else if (qnsBox.value == "He was ________ by his multiple failures."){
+
+alert("Wrong! The answer is option 2, 'demoralized'.")
+
+qnsBox.value = "What is another word for 'intricate'?"
+
+button1.innerHTML = "circuitous";
+button2.innerHTML = "simple";
+button3.innerHTML = "straighforward";
+button4.innerHTML = "elaborate";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'intricate'?"){
+
+alert("Wrong! The answer is option 1, 'circuitous'.");
+
+qnsBox.value = "Give an example of a preposition."
+
+button1.innerHTML = "a";
+button2.innerHTML = "was";
+button3.innerHTML = "is";
+button4.innerHTML = "at";
+
+score =  score - 20;
+} else if (qnsBox.value == "Give an example of a preposition."){
+
+  alert("Correct! I honestly have nothing more to say in order to praise you.");
+
+
+  qnsBox.value = "What is another word for 'examine'?";
+
+  button1.innerHTML = "detail";
+  button2.innerHTML = "study";
+  button3.innerHTML = "test";
+  button4.innerHTML = "revise";
+
+  score = score;
+
+} else if (qnsBox.value == "What is another word for 'examine'?"){
+
+score = score - 20;
+alert("Wrong! The answer is option 2, 'study'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+</script>
+</body>
+
+
+</html>

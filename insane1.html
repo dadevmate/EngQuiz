@@ -1,0 +1,288 @@
+<html>
+
+<body style="background-color: #5f369c;">
+
+  <h1 style="text-align: center; font-family: Arial; color: white; margin-top: 100px;">Insane: Quiz 1</h1>
+
+  <h2 style="color: black; font-family: Courier new; margin-top: 100px;">5 questions in total:</h2>
+
+
+  <div style="background: white; width: 500px; height: 500px; margin-left: 460px; border: solid 5px black;">
+
+    <input style="width: 400px; margin-left: 50px; height: 40px; margin-top: 20px; font-size: 15px; font-family: Trebuchet MS;" type="text" id="qnsBox" value="What is another word for 'obstreperous'?">
+
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option1" onclick ="firstOption()">apathetic</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id = "option2" onclick = "secondOption()">uproarious</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option3" onclick="thirdOption()">lukewarm</button>
+<button style="background-color: #b35246; border-radius: 7px; border: solid 3px black; font-size: 20px; font-family: Tahoma; margin-top: 100px; margin-left: 30px;" id="option4" onclick = "fourthOption()">lethargic</button>
+
+
+</div>
+
+<script>
+
+var qnsBox =  document.getElementById("qnsBox");
+var button1 = document.getElementById("option1");
+var button2 = document.getElementById("option2");
+var button3 = document.getElementById("option3");
+var button4 = document.getElementById("option4");
+
+var score =  100;
+
+function firstOption(){
+
+if (qnsBox.value == "What is another word for 'obstreperous'?"){
+
+alert("Wrong! The answer is option 2, 'uproarious'.");
+
+qnsBox.value = "What is another word for 'pococurante'?"
+
+button1.innerHTML = "ardent";
+button2.innerHTML = "encouraging";
+button3.innerHTML = "enthusiastic";
+button4.innerHTML = "phlegmatic";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'pococurante'?"){
+
+alert("Wrong! The answer is option 4, 'phlegmatic'.")
+
+qnsBox.value = "What is another word for 'zealous'?"
+
+button1.innerHTML = "vehement";
+button2.innerHTML = "torpid";
+button3.innerHTML = "languid";
+button4.innerHTML = "supine";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'zealous'?"){
+
+alert("Correct! Are you insane to get this correct?");
+
+qnsBox.value = "What is another word for 'intractable'?"
+
+button1.innerHTML = "compliant";
+button2.innerHTML = "acquiescent";
+button3.innerHTML = "obdurate";
+button4.innerHTML = "obsequious";
+
+score =  score;
+} else if (qnsBox.value == "What is another word for 'intractable'?"){
+
+  alert("Wrong! The answer is option 3, 'obdurate'.");
+
+
+  qnsBox.value = "What is another word for 'spontaneous'?";
+
+  button1.innerHTML = "coerced";
+  button2.innerHTML = "stipulated";
+  button3.innerHTML = "extemporaneous";
+  button4.innerHTML = "ordained";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'spontaneous'?"){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'extemporaneous'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function secondOption(){
+
+if (qnsBox.value == "What is another word for 'obstreperous'?"){
+
+alert("Correct! Do you have an Apple M1 chip inside you to make you so smart?.");
+
+qnsBox.value = "What is another word for 'pococurante'?"
+
+button1.innerHTML = "ardent";
+button2.innerHTML = "encouraging";
+button3.innerHTML = "enthusiastic";
+button4.innerHTML = "phlegmatic";
+
+score = score;
+
+} else if (qnsBox.value == "What is another word for 'pococurante'?"){
+
+alert("Wrong! The answer is option 4, 'phlegmatic'.")
+
+qnsBox.value = "What is another word for 'zealous'?"
+
+button1.innerHTML = "vehement";
+button2.innerHTML = "torpid";
+button3.innerHTML = "languid";
+button4.innerHTML = "supine";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'zealous'?"){
+
+alert("Wrong! The answer is option 1, 'vehement'.");
+
+qnsBox.value = "What is another word for 'intractable'?"
+
+button1.innerHTML = "compliant";
+button2.innerHTML = "acquiescent";
+button3.innerHTML = "obdurate";
+button4.innerHTML = "obsequious";
+
+score =  score - 20;
+} else if (qnsBox.value == "What is another word for 'intractable'?"){
+
+  alert("Wrong! The answer is option 3, 'obdurate'.");
+
+
+  qnsBox.value = "What is another word for 'spontaneous'?";
+
+  button1.innerHTML = "coerced";
+  button2.innerHTML = "stipulated";
+  button3.innerHTML = "extemporaneous";
+  button4.innerHTML = "ordained";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'spontaneous'?"){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'extemporaneous'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function thirdOption(){
+
+if (qnsBox.value == "What is another word for 'obstreperous'?"){
+
+alert("Wrong! The answer is option 2, 'uproarious'.");
+
+qnsBox.value = "What is another word for 'pococurante'?"
+
+button1.innerHTML = "ardent";
+button2.innerHTML = "encouraging";
+button3.innerHTML = "enthusiastic";
+button4.innerHTML = "phlegmatic";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'pococurante'?"){
+
+alert("Wrong! The answer is option 4, 'phlegmatic'.")
+
+qnsBox.value = "What is another word for 'zealous'?"
+
+button1.innerHTML = "vehement";
+button2.innerHTML = "torpid";
+button3.innerHTML = "languid";
+button4.innerHTML = "supine";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'zealous'?"){
+
+alert("Wrong! The answer is option 1, 'vehement'.");
+
+qnsBox.value = "What is another word for 'intractable'?"
+
+button1.innerHTML = "compliant";
+button2.innerHTML = "acquiescent";
+button3.innerHTML = "obdurate";
+button4.innerHTML = "obsequious";
+
+score = score - 20;
+} else if (qnsBox.value == "What is another word for 'intractable'?"){
+
+  alert("Correct! Are you an A12 Apple chip or an A11.");
+
+
+  qnsBox.value = "What is another word for 'spontaneous'?";
+
+  button1.innerHTML = "coerced";
+  button2.innerHTML = "stipulated";
+  button3.innerHTML = "extemporaneous";
+  button4.innerHTML = "ordained";
+
+  score = score;
+
+} else if (qnsBox.value == "What is another word for 'spontaneous'?"){
+
+score = score;
+alert("Correct! Are you gonna apply to Harvard? Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+function fourthOption(){
+
+if (qnsBox.value == "What is another word for 'obstreperous'?"){
+
+alert("Wrong! The answer is option 2, 'uproarious'.");
+
+qnsBox.value = "What is another word for 'pococurante'?"
+
+button1.innerHTML = "ardent";
+button2.innerHTML = "encouraging";
+button3.innerHTML = "enthusiastic";
+button4.innerHTML = "phlegmatic";
+
+score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'pococurante'?"){
+
+alert("Correct! Mission Implausable!")
+
+qnsBox.value = "What is another word for 'zealous'?"
+
+button1.innerHTML = "vehement";
+button2.innerHTML = "torpid";
+button3.innerHTML = "languid";
+button4.innerHTML = "supine";
+
+score = score;
+
+} else if (qnsBox.value == "What is another word for 'zealous'?"){
+
+alert("Wrong! The answer is option 1, 'vehement'.");
+
+qnsBox.value = "What is another word for 'intractable'?"
+
+button1.innerHTML = "compliant";
+button2.innerHTML = "acquiescent";
+button3.innerHTML = "obdurate";
+button4.innerHTML = "obsequious";
+
+score =  score - 20;
+} else if (qnsBox.value == "What is another word for 'intractable'?"){
+
+  alert("Wrong! The answer is option 3, 'obdurate'.");
+
+
+  qnsBox.value = "What is another word for 'spontaneous'?";
+
+  button1.innerHTML = "coerced";
+  button2.innerHTML = "stipulated";
+  button3.innerHTML = "extemporaneous";
+  button4.innerHTML = "ordained";
+
+  score = score - 20;
+
+} else if (qnsBox.value == "What is another word for 'spontaneous'?"){
+
+score = score - 20;
+alert("Wrong! The answer is option 3, 'extemporaneous'. Your final score is " + score);
+window.location.href = "file:///Users/nethan/Desktop/WebDev/EngQuiz/Index.html";
+}
+
+}
+
+</script>
+</body>
+
+
+</html>
